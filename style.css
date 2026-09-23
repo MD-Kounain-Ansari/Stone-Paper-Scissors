@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ccd67f;
+}
+h1 {
+  background-color: #8a5f41;
+  color: wheat;
+  height: 8vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.choice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.5rem;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+}
+
+img {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.choice:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+.score-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+  font-size: 2rem;
+  margin-top: 3rem;
+  color: #42220b;
+  cursor: pointer;
+}
+
+#user {
+  margin-left: 3rem;
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
+}
+#bot {
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
+}
+.msg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.msg {
+  margin-top: 3rem;
+  background-color: #F3E4C9;
+  color: #42220b;
+  padding: 12px 18px;
+  border-radius: 1.5rem;
+  font-size: 2rem;
+  display: inline;
+  cursor: pointer;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reset-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 12px;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #6f5440;
+    color: #F3E4C9;
+    font-size: 1.25rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+}
+
+.reset-btn:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+    transition: 0.3ms all ease-in-out;
+}
+
+@media (max-width : 376px) {
+    .score-box {
+        gap: 4rem;
+    }
+}
+
+@media (max-width : 320px) {
+    .score-box {
+        gap: 2rem;
+    }
+}
+
+@media (max-width : 426px ) {
+    .msg {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
